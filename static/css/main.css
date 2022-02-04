@@ -1,3 +1,12 @@
+.paleta{
+	color: #000000;
+	color: #4B5053;
+	color: #BBBBBB;
+	color: #E8FCC2;
+	color: #E1CC74;
+	color: #FFCC00;
+	color: #FF9D00;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -9,23 +18,23 @@ body{
 .content{
 	display: flex;
 	flex-flow: row;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 }
 .sidebar-left{
 	display: flex;
 	flex-flow: column;
-	max-width: 25vw;
-	max-height: 100vh;
-	background: black;
+	max-width: 25%;
+	max-height: 100%;
+	background: #4B5053;
 	color: #BBBBBB;
 	padding: 1rem;
 }
 .sidebar-right{
 	display: flex;
 	flex-flow: column;
-	max-width: 75vw;
-	max-height: 100vh;
+	max-width: 75%;
+	max-height: 100%;
 	background: #e8fcc2;
 }
 .sidebar-left img{
@@ -33,11 +42,10 @@ body{
 }
 .sidebar-left nav ul li{
 	list-style: none;
-	margin-top: 1rem;
+	padding: 1rem;
 }
 .sidebar-left nav ul li:hover{
 	color: #000000;
-	background-color: #bbbbbb;
+	background-image: linear-gradient(to right, #BBBBBB, #4B5053);
 	border-radius: 0.5rem;
-	padding: 2% 4%;
 }
