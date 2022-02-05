@@ -1,8 +1,9 @@
+
 .paleta{
 	color: #000000;
 	color: #4B5053;
 	color: #BBBBBB;
-	color: #E8FCC2;
+	color: #fffce3;
 	color: #E1CC74;
 	color: #FFCC00;
 	color: #FF9D00;
@@ -14,6 +15,7 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	background: #4B5053;
 }
 .content{
 	display: flex;
@@ -24,9 +26,8 @@ body{
 .sidebar-left{
 	display: flex;
 	flex-flow: column;
-	max-width: 25%;
+	max-width: 15%;
 	max-height: 100%;
-	background: #4B5053;
 	color: #BBBBBB;
 	padding: 1rem;
 }
@@ -35,17 +36,91 @@ body{
 	flex-flow: column;
 	max-width: 75%;
 	max-height: 100%;
-	background: #e8fcc2;
+	background: #fffce3;
 }
 .sidebar-left img{
 	width: 100%
 }
-.sidebar-left nav ul li{
+.sidebar-left nav ul a{
+	text-decoration: none;
 	list-style: none;
-	padding: 1rem;
+	color: #BBBBBB;
+}
+.sidebar-left nav ul li{
+	margin-top: 0.5rem;
+	list-style: none;
+	padding: 0.5rem 1rem;
 }
 .sidebar-left nav ul li:hover{
 	color: #000000;
 	background-image: linear-gradient(to right, #BBBBBB, #4B5053);
 	border-radius: 0.5rem;
+}
+.sidebar-left button{
+	margin-top: 0.5rem;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #BBBBBB;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	color: #BBBBBB;
+	width: 100%;
+	padding: 1rem;
+}
+.sidebar-left button:hover{
+	background-color: #BBBBBB;
+	color: #4B5053;
+}
+.sidebar-left nav ul li img{
+	width: 1rem;
+	margin-right: 0.5rem;
+}
+.info-bar{
+	display: flex;
+	align-items: center;
+	padding: 0.6rem;
+	border-left: 1px solid #bbbbbb34;
+	background-color: #4B5053;
+}
+.info-bar img{
+	width: 4rem;
+	margin-right: 0.5rem;
+	border-radius: 50%;
+}
+.user-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #BBBBBB;
+}
+.busca{
+	display: flex;
+	margin: 0 1rem;
+	align-items: center;
+}
+.busca input{
+	border: none;
+	border-radius: 0.5rem 0 0 0.5rem;
+	background-color: #BBBBBB;
+	padding: 0.65rem;
+}
+.busca button{
+	border: 0;
+	background: none;
+	padding: 0.2rem;
+}
+.busca button img{
+	width: 2.2rem;
+	border: none;
+	border-radius: 0 0.5rem 0.5rem 0;
+	background-color: #BBBBBB;
+	padding: 0.4rem;
+	margin-top: 0.2rem;
+}
+.info-system p{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	color: #BBBBBB;
+	margin-top: -0.3rem;
 }
