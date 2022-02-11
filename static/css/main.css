@@ -1,4 +1,4 @@
-
+@import url(“https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”);
 .paleta{
 	color: #000000;
 	color: #4B5053;
@@ -14,19 +14,22 @@
 	box-sizing: border-box;
 }
 body{
+	width: 100%;
+	height: 100%;
 	font-family: 'Poppins', sans-serif;
-	background: #4B5053;
+	background-image: linear-gradient(to right, #4B5053, #7a7a7a);
 }
 .content{
 	display: flex;
 	flex-flow: row;
-	width: 100%;
-	height: 100%;
+	justify-content: stretch;
+	width: 100vw;
+	height: 100vh;
 }
 .sidebar-left{
 	display: flex;
 	flex-flow: column;
-	max-width: 15%;
+	max-width: 17vw;
 	max-height: 100%;
 	color: #BBBBBB;
 	padding: 1rem;
@@ -34,11 +37,12 @@ body{
 .sidebar-right{
 	display: flex;
 	flex-flow: column;
-	max-width: 75%;
+	width: 83vw;
 	max-height: 100%;
 	background: #fffce3;
 }
-.sidebar-left img{
+.sidebar-left a img{
+	align-self: center;
 	width: 100%
 }
 .sidebar-left nav ul a{
@@ -49,12 +53,16 @@ body{
 .sidebar-left nav ul li{
 	margin-top: 0.5rem;
 	list-style: none;
+	border-radius: 0.5rem;
 	padding: 0.5rem 1rem;
 }
 .sidebar-left nav ul li:hover{
 	color: #000000;
-	background-image: linear-gradient(to right, #BBBBBB, #4B5053);
+	background-image: linear-gradient(to right, #BBBBBB, #4b505300);
 	border-radius: 0.5rem;
+	cursor: pointer;
+
+	transition: all .8s;
 }
 .sidebar-left button{
 	margin-top: 0.5rem;
@@ -70,6 +78,12 @@ body{
 .sidebar-left button:hover{
 	background-color: #BBBBBB;
 	color: #4B5053;
+	cursor: pointer;
+
+	transition: all .8s;
+}
+.sidebar-left i{
+	margin-left: .5rem;
 }
 .sidebar-left nav ul li img{
 	width: 1rem;
@@ -77,10 +91,11 @@ body{
 }
 .info-bar{
 	display: flex;
+	justify-content: space-around;
 	align-items: center;
 	padding: 0.6rem;
 	border-left: 1px solid #bbbbbb34;
-	background-color: #4B5053;
+	background: #4B5053;
 }
 .info-bar img{
 	width: 4rem;
@@ -99,28 +114,29 @@ body{
 	align-items: center;
 }
 .busca input{
+	width: 25vw;
 	border: none;
-	border-radius: 0.5rem 0 0 0.5rem;
+	border-radius: 0.5rem;
 	background-color: #BBBBBB;
 	padding: 0.65rem;
+	cursor: pointer;
 }
 .busca button{
 	border: 0;
 	background: none;
 	padding: 0.2rem;
 }
-.busca button img{
+.busca button i{
 	width: 2.2rem;
-	border: none;
-	border-radius: 0 0.5rem 0.5rem 0;
-	background-color: #BBBBBB;
+	border-left: 1px solid #4B5053;
+	color: #4B5053;
 	padding: 0.4rem;
-	margin-top: 0.2rem;
+	margin-left: -2.5rem;
+	cursor: pointer;
 }
 .info-system p{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	color: #BBBBBB;
-	margin-top: -0.3rem;
 }
