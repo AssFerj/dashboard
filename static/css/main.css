@@ -29,6 +29,7 @@ body{
 .sidebar-left{
 	display: flex;
 	flex-flow: column;
+	justify-content: space-between;
 	max-width: 17vw;
 	max-height: 100%;
 	color: #BBBBBB;
